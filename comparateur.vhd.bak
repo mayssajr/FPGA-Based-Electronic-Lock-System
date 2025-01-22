@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity comparateur is
+	port(
+	touche : in std_logic_vector(3 downto 0);
+	
+	sortie : out std_logic;
+	ledR : out std_logic;
+	ledV : out std_logic
+	);
+end comparateur;
+
+architecture codage of comparateur is
+signal code: STD_LOGIC_VECTOR(3 downto 0) :="0101";
+
+begin
+
+	sortie <= '1' when touche = code else '0';
+	ledR <= '1' when sortie = '0' else '0';
+	ledV <= '1' when sortie = '1' else '0';
+	
+end codage;		 

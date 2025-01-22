@@ -1,0 +1,44 @@
+# do serrure.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:59:31 on Jan 21,2025
+# vlog -work work serrure.vo 
+# -- Compiling module decode_clavier
+# 
+# Top level modules:
+# 	decode_clavier
+# End time: 23:59:31 on Jan 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:59:31 on Jan 21,2025
+# vlog -work work bench_decode_serrure.vwf.vt 
+# -- Compiling module decode_clavier_vlg_sample_tst
+# -- Compiling module decode_clavier_vlg_check_tst
+# -- Compiling module decode_clavier_vlg_vec_tst
+# 
+# Top level modules:
+# 	decode_clavier_vlg_vec_tst
+# End time: 23:59:31 on Jan 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "serrure.do" 
+# Start time: 23:59:31 on Jan 21,2025
+# Loading work.decode_clavier_vlg_vec_tst
+# Loading work.decode_clavier
+# Loading work.decode_clavier_vlg_sample_tst
+# Loading work.decode_clavier_vlg_check_tst
+# ** Warning: (vsim-3017) serrure.vo(1161): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /decode_clavier_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~ 
+# ** Warning: (vsim-3722) serrure.vo(1161): [TFMPC] - Missing connection for port 'clk_dft'.
+# 
+# ** Warning: (vsim-3017) serrure.vo(1184): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /decode_clavier_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~ 
+# ** Warning: (vsim-3722) serrure.vo(1184): [TFMPC] - Missing connection for port 'clk_dft'.
+# 
+# Simulation passed !
+# ** Note: $finish    : bench_decode_serrure.vwf.vt(216)
+#    Time: 1 us  Iteration: 0  Instance: /decode_clavier_vlg_vec_tst/tb_out
+# End time: 23:59:32 on Jan 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
